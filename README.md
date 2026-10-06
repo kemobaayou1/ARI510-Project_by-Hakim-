@@ -1,5 +1,6 @@
 # Retail Trader Intent Classification Dataset
-
+#data link 
+https://drive.google.com/file/d/1hDKKf2OuXPnUgJwmlkCNlsTumzJumZA8/view?usp=sharing
 ## Project Overview
 
 This project creates a human-annotated dataset for identifying trading intentions in finance-related Reddit posts. For each post, annotators choose one of four labels:
