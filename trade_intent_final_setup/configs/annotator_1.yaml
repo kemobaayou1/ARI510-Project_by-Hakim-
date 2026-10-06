@@ -1,0 +1,21 @@
+port: 8000
+annotation_task_name: "Retail Trader Intent - Annotator 1"
+task_dir: ..
+data_files: [data/annotator_1.csv]
+item_properties: {id_key: item_id, text_key: display_text}
+output_annotation_dir: annotation_output/annotator_1/
+export_annotation_format: [csv, jsonl]
+user_config: {allow_all_users: true, users: []}
+require_password: false
+persist_sessions: false
+assignment_strategy: fixed_order
+max_annotations_per_user: 100
+max_annotations_per_item: 10
+annotation_schemes:
+  - annotation_type: radio
+    name: trade_intent
+    description: "What trading action does the writer clearly express or recommend?"
+    labels: ["Buy / Increase", "Sell / Decrease / Short", "Hold", "No Clear Trade Intent"]
+    sequential_key_binding: true
+    required: true
+
